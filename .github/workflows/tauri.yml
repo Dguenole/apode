@@ -1,0 +1,41 @@
+name: Build Tauri app (Windows)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+
+      - name: Install frontend dependencies
+        run: npm install
+
+      - name: Install Tauri CLI
+        run: npm install -g @tauri-apps/cli
+
+      - name: Build app with Tauri
+        run: tauri build
+
+      - name: Upload executable
+        uses: actions/upload-artifact@v4
+        with:
+          name: appdi-windows
+          path: target/release/bundle/windows
+      - name: Lister les fichiers pour debug
+        run: ls -R
+      - run: cd $GITHUB_WORKSPACE
+
