@@ -1,5 +1,11 @@
 # AppFlow — Simulateur de flot maximal
 
+![React](https://img.shields.io/badge/React-18.3-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Tauri](https://img.shields.io/badge/Tauri-2.5-FFC131?style=flat-square&logo=tauri&logoColor=black)
+
 Application de visualisation interactive de l'algorithme **Ford-Fulkerson** de calcul du flot maximal dans un réseau de transport. On dessine le graphe à la souris, on définit les capacités, et l'application affiche le flot maximal ainsi que chaque chemin augmentant utilisé pour l'obtenir.
 
 ---
