@@ -2,22 +2,16 @@
 
 Application de visualisation interactive de l'algorithme **Ford-Fulkerson** de calcul du flot maximal dans un réseau de transport. On dessine le graphe à la souris, on définit les capacités, et l'application affiche le flot maximal ainsi que chaque chemin augmentant utilisé pour l'obtenir.
 
-![React](https://img.shields.io/badge/React-18-61dafb)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178c6)
-![Tailwind](https://img.shields.io/badge/Tailwind-3.4-38bdf8)
-![Tauri](https://img.shields.io/badge/Tauri-2-ffc131)
-![Vite](https://img.shields.io/badge/Vite-5-646cff)
-
 ---
 
 ## Fonctionnalités
 
-- 🎨 **Éditeur de graphe visuel** — création de nœuds et d'arcs directement sur le canvas
-- 🎯 **Typage des nœuds** — source, puits, ou nœud intermédiaire
-- 🔢 **Capacités personnalisables** — chaque arc porte sa capacité maximale
-- ⚡ **Calcul du flot maximal** — implémentation de Ford-Fulkerson avec recherche BFS (variante Edmonds-Karp)
-- 📊 **Détail des chemins augmentants** — chaque chemin trouvé est affiché avec son goulot d'étranglement
-- 🖥️ **Application de bureau** — packagée avec Tauri (Windows, macOS, Linux) en plus du mode web
+- **Éditeur de graphe visuel** — création de nœuds et d'arcs directement sur le canvas
+- **Typage des nœuds** — source, puits, ou nœud intermédiaire
+- **Capacités personnalisables** — chaque arc porte sa capacité maximale
+- **Calcul du flot maximal** — implémentation de Ford-Fulkerson avec recherche BFS (variante Edmonds-Karp)
+- **Détail des chemins augmentants** — chaque chemin trouvé est affiché avec son goulot d'étranglement
+- **Application de bureau** — packagée avec Tauri (Windows, macOS, Linux) en plus du mode web
 
 ---
 
